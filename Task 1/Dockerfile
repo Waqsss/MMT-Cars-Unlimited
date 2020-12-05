@@ -1,6 +1,9 @@
 #Base Image (MMT require node 14.15.1)
 FROM node:14.15.1
 
+#Port required by the App
+EXPOSE 3000
+
 #Set working directory
 RUN mkdir /usr/src/app
 
