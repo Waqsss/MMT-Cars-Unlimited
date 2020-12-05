@@ -1,0 +1,416 @@
+2020-12-05T13:37:49.5301736Z ##[section]Starting: Build
+2020-12-05T13:37:49.6886932Z ##[section]Starting: Initialize job
+2020-12-05T13:37:49.6888392Z Agent name: 'Hosted Agent'
+2020-12-05T13:37:49.6888723Z Agent machine name: 'fv-az50-578'
+2020-12-05T13:37:49.6888939Z Current agent version: '2.177.1'
+2020-12-05T13:37:49.6927427Z ##[group]Operating System
+2020-12-05T13:37:49.6927624Z Ubuntu
+2020-12-05T13:37:49.6927771Z 18.04.5
+2020-12-05T13:37:49.6927892Z LTS
+2020-12-05T13:37:49.6928037Z ##[endgroup]
+2020-12-05T13:37:49.6928188Z ##[group]Virtual Environment
+2020-12-05T13:37:49.6928377Z Environment: ubuntu-18.04
+2020-12-05T13:37:49.6928540Z Version: 20201129.1
+2020-12-05T13:37:49.6928822Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20201129.1/images/linux/Ubuntu1804-README.md
+2020-12-05T13:37:49.6929077Z ##[endgroup]
+2020-12-05T13:37:49.6929934Z Current image version: '20201129.1'
+2020-12-05T13:37:49.6934277Z Agent running as: 'vsts'
+2020-12-05T13:37:49.6975290Z Prepare build directory.
+2020-12-05T13:37:49.7221201Z Set build variables.
+2020-12-05T13:37:49.7251605Z Download all required tasks.
+2020-12-05T13:37:49.7368614Z Downloading task: Docker (2.176.0)
+2020-12-05T13:37:51.6184713Z Checking job knob settings.
+2020-12-05T13:37:51.6192966Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2020-12-05T13:37:51.6194123Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2020-12-05T13:37:51.6194749Z Finished checking job knob settings.
+2020-12-05T13:37:51.6517991Z Start tracking orphan processes.
+2020-12-05T13:37:51.6725145Z ##[section]Finishing: Initialize job
+2020-12-05T13:37:51.7075988Z ##[section]Starting: Checkout MMT CICD challenge@main to s
+2020-12-05T13:37:51.7274765Z ==============================================================================
+2020-12-05T13:37:51.7275440Z Task         : Get sources
+2020-12-05T13:37:51.7275951Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2020-12-05T13:37:51.7276228Z Version      : 1.0.0
+2020-12-05T13:37:51.7276675Z Author       : Microsoft
+2020-12-05T13:37:51.7277316Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2020-12-05T13:37:51.7277633Z ==============================================================================
+2020-12-05T13:37:52.6108765Z Syncing repository: MMT CICD challenge (Git)
+2020-12-05T13:37:52.6111654Z ##[command]git version
+2020-12-05T13:37:52.6115815Z git version 2.29.2
+2020-12-05T13:37:52.6117094Z ##[command]git lfs version
+2020-12-05T13:37:52.6161049Z git-lfs/2.12.1 (GitHub; linux amd64; go 1.13.4)
+2020-12-05T13:37:52.6162596Z ##[command]git init "/home/vsts/work/1/s"
+2020-12-05T13:37:52.6165779Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2020-12-05T13:37:52.6166866Z ##[command]git remote add origin https://waqarb@dev.azure.com/waqarb/MMT%2520CICD%2520challenge/_git/MMT%2520CICD%2520challenge
+2020-12-05T13:37:52.6175058Z ##[command]git config gc.auto 0
+2020-12-05T13:37:52.6179071Z ##[command]git config --get-all http.https://waqarb@dev.azure.com/waqarb/MMT%2520CICD%2520challenge/_git/MMT%2520CICD%2520challenge.extraheader
+2020-12-05T13:37:52.6182907Z ##[command]git config --get-all http.proxy
+2020-12-05T13:37:52.6186405Z ##[command]git config http.version HTTP/1.1
+2020-12-05T13:37:52.6192756Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer ***" fetch --force --tags --prune --progress --no-recurse-submodules origin
+2020-12-05T13:37:52.6913623Z remote: Azure Repos        
+2020-12-05T13:37:52.7528118Z remote: 
+2020-12-05T13:37:52.7528382Z remote: Found 111 objects to send. (61 ms)        
+2020-12-05T13:37:52.8152521Z Receiving objects:   0% (1/111)
+2020-12-05T13:37:52.8157657Z Receiving objects:   1% (2/111)
+2020-12-05T13:37:52.8159766Z Receiving objects:   2% (3/111)
+2020-12-05T13:37:52.8161494Z Receiving objects:   3% (4/111)
+2020-12-05T13:37:52.8163654Z Receiving objects:   4% (5/111)
+2020-12-05T13:37:52.8164595Z Receiving objects:   5% (6/111)
+2020-12-05T13:37:52.8165762Z Receiving objects:   6% (7/111)
+2020-12-05T13:37:52.8167138Z Receiving objects:   7% (8/111)
+2020-12-05T13:37:52.8169092Z Receiving objects:   8% (9/111)
+2020-12-05T13:37:52.8169984Z Receiving objects:   9% (10/111)
+2020-12-05T13:37:52.8170446Z Receiving objects:  10% (12/111)
+2020-12-05T13:37:52.8173209Z Receiving objects:  11% (13/111)
+2020-12-05T13:37:52.8173836Z Receiving objects:  12% (14/111)
+2020-12-05T13:37:52.8174476Z Receiving objects:  13% (15/111)
+2020-12-05T13:37:52.8176871Z Receiving objects:  14% (16/111)
+2020-12-05T13:37:52.8181340Z Receiving objects:  15% (17/111)
+2020-12-05T13:37:52.8182167Z Receiving objects:  16% (18/111)
+2020-12-05T13:37:52.8185004Z Receiving objects:  17% (19/111)
+2020-12-05T13:37:52.8185467Z Receiving objects:  18% (20/111)
+2020-12-05T13:37:52.8185899Z Receiving objects:  19% (22/111)
+2020-12-05T13:37:52.8186295Z Receiving objects:  20% (23/111)
+2020-12-05T13:37:52.8186665Z Receiving objects:  21% (24/111)
+2020-12-05T13:37:52.8187054Z Receiving objects:  22% (25/111)
+2020-12-05T13:37:52.8187445Z Receiving objects:  23% (26/111)
+2020-12-05T13:37:52.8226287Z Receiving objects:  24% (27/111)
+2020-12-05T13:37:52.8997514Z Receiving objects:  25% (28/111)
+2020-12-05T13:37:52.8998203Z Receiving objects:  26% (29/111)
+2020-12-05T13:37:52.8998503Z Receiving objects:  27% (30/111)
+2020-12-05T13:37:52.8998768Z Receiving objects:  28% (32/111)
+2020-12-05T13:37:52.8999041Z Receiving objects:  29% (33/111)
+2020-12-05T13:37:52.8999315Z Receiving objects:  30% (34/111)
+2020-12-05T13:37:52.8999562Z Receiving objects:  31% (35/111)
+2020-12-05T13:37:52.9000026Z Receiving objects:  32% (36/111)
+2020-12-05T13:37:52.9000500Z Receiving objects:  33% (37/111)
+2020-12-05T13:37:52.9000811Z Receiving objects:  34% (38/111)
+2020-12-05T13:37:52.9001060Z Receiving objects:  35% (39/111)
+2020-12-05T13:37:52.9001377Z Receiving objects:  36% (40/111)
+2020-12-05T13:37:52.9001649Z Receiving objects:  37% (42/111)
+2020-12-05T13:37:52.9001908Z Receiving objects:  38% (43/111)
+2020-12-05T13:37:52.9002168Z Receiving objects:  39% (44/111)
+2020-12-05T13:37:52.9002447Z Receiving objects:  40% (45/111)
+2020-12-05T13:37:52.9002700Z Receiving objects:  41% (46/111)
+2020-12-05T13:37:52.9003106Z Receiving objects:  42% (47/111)
+2020-12-05T13:37:52.9003366Z Receiving objects:  43% (48/111)
+2020-12-05T13:37:52.9003627Z Receiving objects:  44% (49/111)
+2020-12-05T13:37:52.9003883Z Receiving objects:  45% (50/111)
+2020-12-05T13:37:52.9004142Z Receiving objects:  46% (52/111)
+2020-12-05T13:37:52.9004393Z Receiving objects:  47% (53/111)
+2020-12-05T13:37:52.9004655Z Receiving objects:  48% (54/111)
+2020-12-05T13:37:52.9004951Z Receiving objects:  49% (55/111)
+2020-12-05T13:37:52.9005199Z Receiving objects:  50% (56/111)
+2020-12-05T13:37:52.9005470Z Receiving objects:  51% (57/111)
+2020-12-05T13:37:52.9005796Z Receiving objects:  52% (58/111)
+2020-12-05T13:37:52.9006080Z Receiving objects:  53% (59/111)
+2020-12-05T13:37:52.9006560Z Receiving objects:  54% (60/111)
+2020-12-05T13:37:52.9006911Z Receiving objects:  55% (62/111)
+2020-12-05T13:37:52.9007194Z Receiving objects:  56% (63/111)
+2020-12-05T13:37:52.9007458Z Receiving objects:  57% (64/111)
+2020-12-05T13:37:52.9007731Z Receiving objects:  58% (65/111)
+2020-12-05T13:37:52.9007988Z Receiving objects:  59% (66/111)
+2020-12-05T13:37:52.9008245Z Receiving objects:  60% (67/111)
+2020-12-05T13:37:52.9008503Z Receiving objects:  61% (68/111)
+2020-12-05T13:37:52.9008759Z Receiving objects:  62% (69/111)
+2020-12-05T13:37:52.9009020Z Receiving objects:  63% (70/111)
+2020-12-05T13:37:52.9009290Z Receiving objects:  64% (72/111)
+2020-12-05T13:37:52.9009535Z Receiving objects:  65% (73/111)
+2020-12-05T13:37:52.9009814Z Receiving objects:  66% (74/111)
+2020-12-05T13:37:52.9010062Z Receiving objects:  67% (75/111)
+2020-12-05T13:37:52.9010331Z Receiving objects:  68% (76/111)
+2020-12-05T13:37:52.9010573Z Receiving objects:  69% (77/111)
+2020-12-05T13:37:52.9010858Z Receiving objects:  70% (78/111)
+2020-12-05T13:37:52.9011102Z Receiving objects:  71% (79/111)
+2020-12-05T13:37:52.9011536Z Receiving objects:  72% (80/111)
+2020-12-05T13:37:52.9011979Z Receiving objects:  73% (82/111)
+2020-12-05T13:37:52.9012224Z Receiving objects:  74% (83/111)
+2020-12-05T13:37:52.9012506Z Receiving objects:  75% (84/111)
+2020-12-05T13:37:52.9012752Z Receiving objects:  76% (85/111)
+2020-12-05T13:37:52.9013019Z Receiving objects:  77% (86/111)
+2020-12-05T13:37:52.9013266Z Receiving objects:  78% (87/111)
+2020-12-05T13:37:52.9013536Z Receiving objects:  79% (88/111)
+2020-12-05T13:37:52.9013779Z Receiving objects:  80% (89/111)
+2020-12-05T13:37:52.9014145Z Receiving objects:  81% (90/111)
+2020-12-05T13:37:52.9014417Z Receiving objects:  82% (92/111)
+2020-12-05T13:37:52.9014662Z Receiving objects:  83% (93/111)
+2020-12-05T13:37:52.9014935Z Receiving objects:  84% (94/111)
+2020-12-05T13:37:52.9015179Z Receiving objects:  85% (95/111)
+2020-12-05T13:37:52.9015447Z Receiving objects:  86% (96/111)
+2020-12-05T13:37:52.9015693Z Receiving objects:  87% (97/111)
+2020-12-05T13:37:52.9015949Z Receiving objects:  88% (98/111)
+2020-12-05T13:37:52.9016201Z Receiving objects:  89% (99/111)
+2020-12-05T13:37:52.9016464Z Receiving objects:  90% (100/111)
+2020-12-05T13:37:52.9016723Z Receiving objects:  91% (102/111)
+2020-12-05T13:37:52.9017071Z Receiving objects:  92% (103/111)
+2020-12-05T13:37:52.9017321Z Receiving objects:  93% (104/111)
+2020-12-05T13:37:52.9017583Z Receiving objects:  94% (105/111)
+2020-12-05T13:37:52.9017839Z Receiving objects:  95% (106/111)
+2020-12-05T13:37:52.9018099Z Receiving objects:  96% (107/111)
+2020-12-05T13:37:52.9018355Z Receiving objects:  97% (108/111)
+2020-12-05T13:37:52.9018616Z Receiving objects:  98% (109/111)
+2020-12-05T13:37:52.9018981Z Receiving objects:  99% (110/111)
+2020-12-05T13:37:52.9019258Z Receiving objects: 100% (111/111)
+2020-12-05T13:37:52.9019610Z Receiving objects: 100% (111/111), 1.20 MiB | 36.26 MiB/s, done.
+2020-12-05T13:37:52.9019897Z Resolving deltas:   0% (0/26)
+2020-12-05T13:37:52.9020295Z Resolving deltas:   3% (1/26)
+2020-12-05T13:37:52.9020608Z Resolving deltas:   7% (2/26)
+2020-12-05T13:37:52.9020858Z Resolving deltas:  11% (3/26)
+2020-12-05T13:37:52.9021110Z Resolving deltas:  15% (4/26)
+2020-12-05T13:37:52.9021344Z Resolving deltas:  19% (5/26)
+2020-12-05T13:37:52.9021595Z Resolving deltas:  23% (6/26)
+2020-12-05T13:37:52.9021843Z Resolving deltas:  26% (7/26)
+2020-12-05T13:37:52.9022092Z Resolving deltas:  30% (8/26)
+2020-12-05T13:37:52.9022338Z Resolving deltas:  34% (9/26)
+2020-12-05T13:37:52.9022691Z Resolving deltas:  38% (10/26)
+2020-12-05T13:37:52.9022957Z Resolving deltas:  42% (11/26)
+2020-12-05T13:37:52.9023198Z Resolving deltas:  46% (12/26)
+2020-12-05T13:37:52.9023470Z Resolving deltas:  50% (13/26)
+2020-12-05T13:37:52.9023710Z Resolving deltas:  53% (14/26)
+2020-12-05T13:37:52.9024006Z Resolving deltas:  57% (15/26)
+2020-12-05T13:37:52.9024242Z Resolving deltas:  61% (16/26)
+2020-12-05T13:37:52.9024502Z Resolving deltas:  65% (17/26)
+2020-12-05T13:37:52.9024739Z Resolving deltas:  69% (18/26)
+2020-12-05T13:37:52.9024989Z Resolving deltas:  73% (19/26)
+2020-12-05T13:37:52.9025234Z Resolving deltas:  76% (20/26)
+2020-12-05T13:37:52.9025681Z Resolving deltas:  80% (21/26)
+2020-12-05T13:37:52.9025967Z Resolving deltas:  84% (22/26)
+2020-12-05T13:37:52.9026407Z Resolving deltas:  88% (23/26)
+2020-12-05T13:37:52.9026671Z Resolving deltas:  92% (24/26)
+2020-12-05T13:37:52.9026938Z Resolving deltas:  96% (25/26)
+2020-12-05T13:37:52.9027207Z Resolving deltas: 100% (26/26)
+2020-12-05T13:37:52.9027485Z Resolving deltas: 100% (26/26), done.
+2020-12-05T13:37:52.9027847Z From https://dev.azure.com/waqarb/MMT%20CICD%20challenge/_git/MMT%20CICD%20challenge
+2020-12-05T13:37:52.9088178Z  * [new branch]      main       -> origin/main
+2020-12-05T13:37:52.9632441Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer ***" fetch --force --tags --prune --progress --no-recurse-submodules origin +90e9a799907324bf4cd15e8ece06e32266238f4d:refs/remotes/origin/90e9a799907324bf4cd15e8ece06e32266238f4d
+2020-12-05T13:37:53.0403556Z From https://dev.azure.com/waqarb/MMT%20CICD%20challenge/_git/MMT%20CICD%20challenge
+2020-12-05T13:37:53.0423294Z  * [new ref]         90e9a799907324bf4cd15e8ece06e32266238f4d -> origin/90e9a799907324bf4cd15e8ece06e32266238f4d
+2020-12-05T13:37:53.0962819Z ##[command]git checkout --progress --force 90e9a799907324bf4cd15e8ece06e32266238f4d
+2020-12-05T13:37:53.0968079Z Note: switching to '90e9a799907324bf4cd15e8ece06e32266238f4d'.
+2020-12-05T13:37:53.0968321Z 
+2020-12-05T13:37:53.0968961Z You are in 'detached HEAD' state. You can look around, make experimental
+2020-12-05T13:37:53.0969525Z changes and commit them, and you can discard any commits you make in this
+2020-12-05T13:37:53.0970084Z state without impacting any branches by switching back to a branch.
+2020-12-05T13:37:53.0970428Z 
+2020-12-05T13:37:53.0970671Z If you want to create a new branch to retain commits you create, you may
+2020-12-05T13:37:53.0971578Z do so (now or later) by using -c with the switch command. Example:
+2020-12-05T13:37:53.0972018Z 
+2020-12-05T13:37:53.0972407Z   git switch -c <new-branch-name>
+2020-12-05T13:37:53.0972624Z 
+2020-12-05T13:37:53.0972837Z Or undo this operation with:
+2020-12-05T13:37:53.0973009Z 
+2020-12-05T13:37:53.0973383Z   git switch -
+2020-12-05T13:37:53.0973528Z 
+2020-12-05T13:37:53.0973813Z Turn off this advice by setting config variable advice.detachedHead to false
+2020-12-05T13:37:53.0974036Z 
+2020-12-05T13:37:53.0974266Z HEAD is now at 90e9a79 Set up CI with Azure Pipelines
+2020-12-05T13:37:53.1038102Z ##[section]Finishing: Checkout MMT CICD challenge@main to s
+2020-12-05T13:37:53.1071337Z ##[section]Starting: Build and push an image to container registry
+2020-12-05T13:37:53.1079274Z ==============================================================================
+2020-12-05T13:37:53.1079620Z Task         : Docker
+2020-12-05T13:37:53.1079964Z Description  : Build or push Docker images, login or logout, start or stop containers, or run a Docker command
+2020-12-05T13:37:53.1080491Z Version      : 2.176.0
+2020-12-05T13:37:53.1080748Z Author       : Microsoft Corporation
+2020-12-05T13:37:53.1081023Z Help         : https://aka.ms/azpipes-docker-tsg
+2020-12-05T13:37:53.1081391Z ==============================================================================
+2020-12-05T13:37:53.6280414Z [command]/usr/bin/docker build -f /home/vsts/work/1/s/Dockerfile --label com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/waqarb/ --label com.azure.dev.image.system.teamproject=MMT CICD challenge --label com.azure.dev.image.build.repository.name=MMT CICD challenge --label com.azure.dev.image.build.sourceversion=90e9a799907324bf4cd15e8ece06e32266238f4d --label com.azure.dev.image.build.repository.uri=https://waqarb@dev.azure.com/waqarb/MMT%20CICD%20challenge/_git/MMT%20CICD%20challenge --label com.azure.dev.image.build.sourcebranchname=main --label com.azure.dev.image.build.definitionname=MMT CICD challenge --label com.azure.dev.image.build.buildnumber=20201205.1 --label com.azure.dev.image.build.builduri=vstfs:///Build/Build/1 -t ***/mmtcicdchallenge:1 /home/vsts/work/1/s
+2020-12-05T13:37:54.4972288Z Sending build context to Docker daemon  2.524MB
+2020-12-05T13:37:54.4978126Z 
+2020-12-05T13:37:54.5014053Z Step 1/16 : FROM node:14.15.1
+2020-12-05T13:37:55.6081904Z 14.15.1: Pulling from library/node
+2020-12-05T13:37:55.9568006Z 7919f5b7d602: Already exists
+2020-12-05T13:37:55.9611830Z 0e107167dcc5: Already exists
+2020-12-05T13:37:55.9663108Z 66a456bba435: Already exists
+2020-12-05T13:37:55.9720945Z 5435318a0426: Already exists
+2020-12-05T13:37:55.9773299Z 8494dd328465: Already exists
+2020-12-05T13:37:55.9823615Z 3b01939c6506: Already exists
+2020-12-05T13:37:55.9850027Z 1ce5dd1bc774: Pulling fs layer
+2020-12-05T13:37:55.9851509Z 1184d3e0bcb0: Pulling fs layer
+2020-12-05T13:37:55.9852831Z 1e0791c658e9: Pulling fs layer
+2020-12-05T13:37:56.3456745Z 1e0791c658e9: Verifying Checksum
+2020-12-05T13:37:56.3457288Z 1e0791c658e9: Download complete
+2020-12-05T13:37:56.3575993Z 1184d3e0bcb0: Verifying Checksum
+2020-12-05T13:37:56.3576824Z 1184d3e0bcb0: Download complete
+2020-12-05T13:37:56.6894689Z 1ce5dd1bc774: Verifying Checksum
+2020-12-05T13:37:56.6910223Z 1ce5dd1bc774: Download complete
+2020-12-05T13:37:58.3323916Z 1ce5dd1bc774: Pull complete
+2020-12-05T13:37:58.4740716Z 1184d3e0bcb0: Pull complete
+2020-12-05T13:37:58.5387558Z 1e0791c658e9: Pull complete
+2020-12-05T13:37:58.5442552Z Digest: sha256:922f9cbc7d960750d3db015e7520f41957130caf8bd16138b29f518aa4ba43a7
+2020-12-05T13:37:58.5469541Z Status: Downloaded newer image for node:14.15.1
+2020-12-05T13:37:58.5477950Z  ---> 4c7835fa737e
+2020-12-05T13:37:58.5478248Z Step 2/16 : RUN mkdir /usr/src/app
+2020-12-05T13:38:00.6462238Z  ---> Running in ab44467c610b
+2020-12-05T13:38:10.4708510Z Removing intermediate container ab44467c610b
+2020-12-05T13:38:10.4709507Z  ---> a7ce7e5175d2
+2020-12-05T13:38:10.4709828Z Step 3/16 : COPY . /usr/src/app
+2020-12-05T13:38:12.0288742Z  ---> 9e369392591f
+2020-12-05T13:38:12.0289398Z Step 4/16 : WORKDIR /usr/src/app
+2020-12-05T13:38:12.0569678Z  ---> Running in d762d04f6d55
+2020-12-05T13:38:13.4497967Z Removing intermediate container d762d04f6d55
+2020-12-05T13:38:13.4499001Z  ---> e7838f0f3079
+2020-12-05T13:38:13.4499239Z Step 5/16 : ENV PATH /usr/src/app/node_modules/.bin:$PATH
+2020-12-05T13:38:13.4862805Z  ---> Running in 9df1b2940d0a
+2020-12-05T13:38:15.0837805Z Removing intermediate container 9df1b2940d0a
+2020-12-05T13:38:15.0847688Z  ---> d46e0d9f0970
+2020-12-05T13:38:15.0848291Z Step 6/16 : RUN yarn
+2020-12-05T13:38:15.1025254Z  ---> Running in a553b7a1ae97
+2020-12-05T13:38:15.9418531Z yarn install v1.22.5
+2020-12-05T13:38:16.0989225Z [91mwarning package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+2020-12-05T13:38:16.1031368Z [0m[1/4] Resolving packages...
+2020-12-05T13:38:16.8678506Z [2/4] Fetching packages...
+2020-12-05T13:38:40.3754150Z info fsevents@2.2.1: The platform "linux" is incompatible with this module.
+2020-12-05T13:38:40.3754893Z info "fsevents@2.2.1" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-12-05T13:38:40.3930890Z info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+2020-12-05T13:38:40.3931545Z info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-12-05T13:38:40.4030834Z info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+2020-12-05T13:38:40.4050120Z info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-12-05T13:38:40.4116731Z [3/4] Linking dependencies...
+2020-12-05T13:38:40.4135756Z [91mwarning " > @testing-library/user-event@12.3.0" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+2020-12-05T13:38:40.4205225Z [0m[91mwarning "react-scripts > @typescript-eslint/eslint-plugin > tsutils@3.17.1" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+2020-12-05T13:38:53.5355996Z [0m[4/4] Building fresh packages...
+2020-12-05T13:38:54.5258225Z Done in 38.63s.
+2020-12-05T13:39:28.1416731Z Removing intermediate container a553b7a1ae97
+2020-12-05T13:39:28.1418450Z  ---> 9ec2e4659a9b
+2020-12-05T13:39:28.1418734Z Step 7/16 : CMD [ "npm", "start" ]
+2020-12-05T13:39:28.5794169Z  ---> Running in 75cec6130c5d
+2020-12-05T13:39:33.3878586Z Removing intermediate container 75cec6130c5d
+2020-12-05T13:39:33.3879599Z  ---> ea824a43deca
+2020-12-05T13:39:33.3879907Z Step 8/16 : LABEL com.azure.dev.image.build.buildnumber=20201205.1
+2020-12-05T13:39:33.4142477Z  ---> Running in dbcb6b084b0b
+2020-12-05T13:39:38.0964676Z Removing intermediate container dbcb6b084b0b
+2020-12-05T13:39:38.0965554Z  ---> 3e62405874bb
+2020-12-05T13:39:38.0965813Z Step 9/16 : LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/1
+2020-12-05T13:39:38.1033305Z  ---> Running in cacd5ea5eddc
+2020-12-05T13:39:42.7508732Z Removing intermediate container cacd5ea5eddc
+2020-12-05T13:39:42.7509860Z  ---> a863883efae1
+2020-12-05T13:39:42.7510127Z Step 10/16 : LABEL com.azure.dev.image.build.definitionname=MMT CICD challenge
+2020-12-05T13:39:42.7731771Z  ---> Running in 83d1ccdad0e4
+2020-12-05T13:39:47.4619959Z Removing intermediate container 83d1ccdad0e4
+2020-12-05T13:39:47.4812047Z  ---> c0f99e45bee5
+2020-12-05T13:39:47.4812579Z Step 11/16 : LABEL com.azure.dev.image.build.repository.name=MMT CICD challenge
+2020-12-05T13:39:47.4982873Z  ---> Running in 03e557eab64d
+2020-12-05T13:39:52.2983859Z Removing intermediate container 03e557eab64d
+2020-12-05T13:39:52.3103412Z  ---> bdd5f2c3e641
+2020-12-05T13:39:52.3105221Z Step 12/16 : LABEL com.azure.dev.image.build.repository.uri=https://waqarb@dev.azure.com/waqarb/MMT%20CICD%20challenge/_git/MMT%20CICD%20challenge
+2020-12-05T13:39:52.3106296Z  ---> Running in d0d87ef28a36
+2020-12-05T13:39:57.1772541Z Removing intermediate container d0d87ef28a36
+2020-12-05T13:39:57.1773366Z  ---> 860a3ca2dc43
+2020-12-05T13:39:57.1773650Z Step 13/16 : LABEL com.azure.dev.image.build.sourcebranchname=main
+2020-12-05T13:39:57.1969846Z  ---> Running in 4668ba60e41e
+2020-12-05T13:40:01.7460443Z Removing intermediate container 4668ba60e41e
+2020-12-05T13:40:01.7465253Z  ---> c4942d72c733
+2020-12-05T13:40:01.7471897Z Step 14/16 : LABEL com.azure.dev.image.build.sourceversion=90e9a799907324bf4cd15e8ece06e32266238f4d
+2020-12-05T13:40:01.7985212Z  ---> Running in bb0454426fc7
+2020-12-05T13:40:06.7492564Z Removing intermediate container bb0454426fc7
+2020-12-05T13:40:06.7493701Z  ---> c0862ffbb37a
+2020-12-05T13:40:06.7494111Z Step 15/16 : LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/waqarb/
+2020-12-05T13:40:06.7768898Z  ---> Running in 49380ca1ba5d
+2020-12-05T13:40:11.7686082Z Removing intermediate container 49380ca1ba5d
+2020-12-05T13:40:11.7691706Z  ---> db73ae007bd8
+2020-12-05T13:40:11.7697794Z Step 16/16 : LABEL com.azure.dev.image.system.teamproject=MMT CICD challenge
+2020-12-05T13:40:11.7950229Z  ---> Running in d7161b0a7358
+2020-12-05T13:40:16.8320481Z Removing intermediate container d7161b0a7358
+2020-12-05T13:40:16.8321784Z  ---> 73575da9bb5d
+2020-12-05T13:40:16.8349864Z Successfully built 73575da9bb5d
+2020-12-05T13:40:16.8413307Z Successfully tagged ***/mmtcicdchallenge:1
+2020-12-05T13:40:16.8814735Z [command]/usr/bin/docker images
+2020-12-05T13:40:16.8883213Z [command]/usr/bin/docker push ***/mmtcicdchallenge:1
+2020-12-05T13:40:16.9474826Z REPOSITORY                                           TAG                 IMAGE ID            CREATED                  SIZE
+2020-12-05T13:40:16.9478012Z ***/mmtcicdchallenge                  1                   73575da9bb5d        Less than a second ago   1.27GB
+2020-12-05T13:40:16.9478922Z node                                                 12                  e4f1e16b3633        10 days ago              918MB
+2020-12-05T13:40:16.9480908Z node                                                 12-alpine           844f8bb6a3f8        10 days ago              89.7MB
+2020-12-05T13:40:16.9481622Z node                                                 10                  2db91b8e7c1b        2 weeks ago              911MB
+2020-12-05T13:40:16.9482071Z node                                                 14.15.1             4c7835fa737e        2 weeks ago              943MB
+2020-12-05T13:40:16.9482825Z buildpack-deps                                       stretch             457a883456ae        2 weeks ago              835MB
+2020-12-05T13:40:16.9483905Z buildpack-deps                                       buster              1469e54e4f92        2 weeks ago              804MB
+2020-12-05T13:40:16.9484711Z debian                                               9                   b33ba41eae78        2 weeks ago              101MB
+2020-12-05T13:40:16.9485556Z debian                                               8                   af91926d63c5        2 weeks ago              129MB
+2020-12-05T13:40:16.9486507Z node                                                 10-alpine           b328632eb00c        5 weeks ago              83.6MB
+2020-12-05T13:40:16.9487399Z ubuntu                                               14.04               df043b4f0cf1        2 months ago             197MB
+2020-12-05T13:40:16.9487943Z jekyll/builder                                       latest              a8007cad4069        3 months ago             677MB
+2020-12-05T13:40:16.9488472Z alpine                                               3.9                 78a2ce922f86        7 months ago             5.55MB
+2020-12-05T13:40:16.9489174Z alpine                                               3.10                be4e4bea2c2e        7 months ago             5.58MB
+2020-12-05T13:40:16.9489746Z alpine                                               3.8                 c8bccc0af957        10 months ago            4.41MB
+2020-12-05T13:40:16.9490252Z alpine                                               3.7                 6d1ef012b567        21 months ago            4.21MB
+2020-12-05T13:40:16.9491104Z mcr.microsoft.com/azure-pipelines/node8-typescript   latest              9a948d360778        2 years ago              595MB
+2020-12-05T13:40:17.0007304Z The push refers to repository [***/mmtcicdchallenge]
+2020-12-05T13:40:17.0445882Z 7a855edfce58: Preparing
+2020-12-05T13:40:17.0446869Z 1b19737cb9d2: Preparing
+2020-12-05T13:40:17.0447498Z 61378df34367: Preparing
+2020-12-05T13:40:17.0447833Z c0b1986da675: Preparing
+2020-12-05T13:40:17.0448049Z a5d5df0135c8: Preparing
+2020-12-05T13:40:17.0448592Z 76744ffe8974: Preparing
+2020-12-05T13:40:17.0448825Z 0c6d2a8d3a7e: Preparing
+2020-12-05T13:40:17.0449058Z 6ad22fbe53ce: Preparing
+2020-12-05T13:40:17.0449267Z f04853d2d299: Preparing
+2020-12-05T13:40:17.0449496Z 9f07fffa6fe1: Preparing
+2020-12-05T13:40:17.0449704Z 6c5a5125b341: Preparing
+2020-12-05T13:40:17.0452213Z 26711ab4f3b6: Preparing
+2020-12-05T13:40:17.0456195Z 76744ffe8974: Waiting
+2020-12-05T13:40:17.0457112Z 0c6d2a8d3a7e: Waiting
+2020-12-05T13:40:17.0458244Z 6ad22fbe53ce: Waiting
+2020-12-05T13:40:17.0459448Z f04853d2d299: Waiting
+2020-12-05T13:40:17.0460323Z 9f07fffa6fe1: Waiting
+2020-12-05T13:40:17.0468932Z 6c5a5125b341: Waiting
+2020-12-05T13:40:17.0480100Z 26711ab4f3b6: Waiting
+2020-12-05T13:40:18.1244396Z 61378df34367: Pushed
+2020-12-05T13:40:18.1751993Z c0b1986da675: Pushed
+2020-12-05T13:40:18.1913898Z 1b19737cb9d2: Pushed
+2020-12-05T13:40:18.8467737Z a5d5df0135c8: Pushed
+2020-12-05T13:40:19.5442632Z 0c6d2a8d3a7e: Pushed
+2020-12-05T13:40:24.5428344Z 9f07fffa6fe1: Pushed
+2020-12-05T13:40:27.8308781Z 76744ffe8974: Pushed
+2020-12-05T13:40:33.3494648Z 6c5a5125b341: Pushed
+2020-12-05T13:40:52.8894974Z 7a855edfce58: Pushed
+2020-12-05T13:41:02.1050593Z 26711ab4f3b6: Pushed
+2020-12-05T13:41:04.6318828Z f04853d2d299: Pushed
+2020-12-05T13:42:13.6736846Z 6ad22fbe53ce: Pushed
+2020-12-05T13:42:14.7957632Z 1: digest: sha256:dda831f8878c2be1ade849c4e5f01e211337e42dcaf8a46224a93a0bb22a1539 size: 2846
+2020-12-05T13:42:14.8055338Z [command]/usr/bin/docker history --format createdAt:{{.CreatedAt}}; layerSize:{{.Size}}; createdBy:{{.CreatedBy}}; layerId:{{.ID}} --no-trunc ***/mmtcicdchallenge:1
+2020-12-05T13:42:14.8599398Z createdAt:2020-12-05T13:40:16Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=MMT CICD challenge; layerId:sha256:73575da9bb5de3c16fc094829142d2d4256cc64ce6f89b09aac1b4210eacbd42
+2020-12-05T13:42:14.8600858Z createdAt:2020-12-05T13:40:11Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/waqarb/; layerId:sha256:db73ae007bd864aab8db4a8720a6299beebcd51fc0da6e4cd32cf6a25f0765ac
+2020-12-05T13:42:14.8602035Z createdAt:2020-12-05T13:40:06Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=90e9a799907324bf4cd15e8ece06e32266238f4d; layerId:sha256:c0862ffbb37a663e7b4ffee5de9b52047c8c7ef46a06d4a58002d68d189e83c7
+2020-12-05T13:42:14.8603124Z createdAt:2020-12-05T13:40:01Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main; layerId:sha256:c4942d72c733687294ed2d1217e8429f77263e497cd47c79a6c8bdc42d2d4c5d
+2020-12-05T13:42:14.8604787Z createdAt:2020-12-05T13:39:56Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://waqarb@dev.azure.com/waqarb/MMT%20CICD%20challenge/_git/MMT%20CICD%20challenge; layerId:sha256:860a3ca2dc4305ef887e355dc1139b74b0d0694bd185bc47d72befe0cc27c4ff
+2020-12-05T13:42:14.8605937Z createdAt:2020-12-05T13:39:52Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=MMT CICD challenge; layerId:sha256:bdd5f2c3e6410d5f0ecef7eb3aff370b227d703e333db90dcd080654c416fdde
+2020-12-05T13:42:14.8607358Z createdAt:2020-12-05T13:39:47Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=MMT CICD challenge; layerId:sha256:c0f99e45bee59067c582f2135912539374ef0cbb75e7a11e2a273f351249341e
+2020-12-05T13:42:14.8608422Z createdAt:2020-12-05T13:39:42Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/1; layerId:sha256:a863883efae1836cae9541aaaa0fefd473eac0cdea8504ba3958baf15572091a
+2020-12-05T13:42:14.8609473Z createdAt:2020-12-05T13:39:37Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=20201205.1; layerId:sha256:3e62405874bbccefa852519e5ca77b1fb31c57e9b3d8aec8ea2836cfb180cb57
+2020-12-05T13:42:14.8610674Z createdAt:2020-12-05T13:39:33Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["npm" "start"]; layerId:sha256:ea824a43deca0f9e54c3631f62e9d0146c7a1fbaa27639536d40fe8cbf902225
+2020-12-05T13:42:14.8611540Z createdAt:2020-12-05T13:39:18Z; layerSize:321MB; createdBy:/bin/sh -c yarn; layerId:sha256:9ec2e4659a9bf8628f388435f51c31ddd06f54b1260c91597585ecf51ff5fbac
+2020-12-05T13:42:14.8612804Z createdAt:2020-12-05T13:38:14Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV PATH=/usr/src/app/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin; layerId:sha256:d46e0d9f097081ac9101ff978a0756224bf5aa966ff3ce87fb09df32b5f5edc6
+2020-12-05T13:42:14.8614108Z createdAt:2020-12-05T13:38:13Z; layerSize:0B; createdBy:/bin/sh -c #(nop) WORKDIR /usr/src/app; layerId:sha256:e7838f0f3079ee512debae80931b62ec47adaca8f46f0dcbb6c3a5d925e5aa07
+2020-12-05T13:42:14.8615234Z createdAt:2020-12-05T13:38:11Z; layerSize:2.48MB; createdBy:/bin/sh -c #(nop) COPY dir:8bbd51af7977a1118ea3ea6afbc4ca9b911975035d72c0d9b80340b6456e852c in /usr/src/app ; layerId:sha256:9e369392591f5ca1d0dd898a5a5bcca76214150cffd7035dbff24b3db4a1226a
+2020-12-05T13:42:14.8616623Z createdAt:2020-12-05T13:38:10Z; layerSize:0B; createdBy:/bin/sh -c mkdir /usr/src/app; layerId:sha256:a7ce7e5175d2adc22802e0bbc6fb5db9f9989717cb1d643c1225353288b874ae
+2020-12-05T13:42:14.8617613Z createdAt:2020-11-18T07:34:04Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["node"]; layerId:sha256:4c7835fa737e1f06d2e86f9c7fcbe7e42635de6d770d13a1d67d89cad1bb3d7f
+2020-12-05T13:42:14.8618349Z createdAt:2020-11-18T07:34:04Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENTRYPOINT ["docker-entrypoint.sh"]; layerId:<missing>
+2020-12-05T13:42:14.8619189Z createdAt:2020-11-18T07:34:04Z; layerSize:116B; createdBy:/bin/sh -c #(nop) COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ ; layerId:<missing>
+2020-12-05T13:42:14.8623065Z createdAt:2020-11-18T07:34:03Z; layerSize:7.75MB; createdBy:/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version; layerId:<missing>
+2020-12-05T13:42:14.8626374Z createdAt:2020-11-18T07:33:58Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV YARN_VERSION=1.22.5; layerId:<missing>
+2020-12-05T13:42:14.8632262Z createdAt:2020-11-18T07:33:58Z; layerSize:100MB; createdBy:/bin/sh -c ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     1C050899334244A8AF75E53792EF661D867B9DFA     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     A48C2BEE680E841632CD4E44F07496B3EB3C1762     108F52B48DB57BB0CC439B2997B01419BD92F80A     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version; layerId:<missing>
+2020-12-05T13:42:14.8636838Z createdAt:2020-11-18T07:33:48Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV NODE_VERSION=14.15.1; layerId:<missing>
+2020-12-05T13:42:14.8637643Z createdAt:2020-11-18T07:30:48Z; layerSize:333kB; createdBy:/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node; layerId:<missing>
+2020-12-05T13:42:14.8639853Z createdAt:2020-11-18T00:45:26Z; layerSize:561MB; createdBy:/bin/sh -c set -ex;  apt-get update;  apt-get install -y --no-install-recommends   autoconf   automake   bzip2   dpkg-dev   file   g++   gcc   imagemagick   libbz2-dev   libc6-dev   libcurl4-openssl-dev   libdb-dev   libevent-dev   libffi-dev   libgdbm-dev   libglib2.0-dev   libgmp-dev   libjpeg-dev   libkrb5-dev   liblzma-dev   libmagickcore-dev   libmagickwand-dev   libmaxminddb-dev   libncurses5-dev   libncursesw5-dev   libpng-dev   libpq-dev   libreadline-dev   libsqlite3-dev   libssl-dev   libtool   libwebp-dev   libxml2-dev   libxslt-dev   libyaml-dev   make   patch   unzip   xz-utils   zlib1g-dev     $(    if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then     echo 'default-libmysqlclient-dev';    else     echo 'libmysqlclient-dev';    fi   )  ;  rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-12-05T13:42:14.8641681Z createdAt:2020-11-18T00:44:01Z; layerSize:142MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   bzr   git   mercurial   openssh-client   subversion     procps  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-12-05T13:42:14.8642750Z createdAt:2020-11-18T00:43:30Z; layerSize:7.81MB; createdBy:/bin/sh -c set -ex;  if ! command -v gpg > /dev/null; then   apt-get update;   apt-get install -y --no-install-recommends    gnupg    dirmngr   ;   rm -rf /var/lib/apt/lists/*;  fi; layerId:<missing>
+2020-12-05T13:42:14.8643868Z createdAt:2020-11-18T00:43:21Z; layerSize:23.2MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   ca-certificates   curl   netbase   wget  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-12-05T13:42:14.8644630Z createdAt:2020-11-17T20:24:11Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["bash"]; layerId:<missing>
+2020-12-05T13:42:14.8645392Z createdAt:2020-11-17T20:24:10Z; layerSize:101MB; createdBy:/bin/sh -c #(nop) ADD file:373a8875589f170b51fa677a3bf736feeb46ea278c553950a3eb3169a2056c12 in / ; layerId:<missing>
+2020-12-05T13:42:14.8698031Z [command]/usr/bin/docker inspect 73575da9bb5de3c16fc094829142d2d4256cc64ce6f89b09aac1b4210eacbd42 -f {{.RootFS.Layers}}
+2020-12-05T13:42:14.9161193Z [sha256:26711ab4f3b6cd27c8325c9c48e9599d08f8264f5403ce7fcf90bae652858fcf sha256:6c5a5125b3412ae2e7ca2d77350bcdcbeee9f7b06adfd2fadde0f6ed5b5156e0 sha256:9f07fffa6fe1ce8ff97e27a4c696b36492931048a10184da005f56b93fc235c9 sha256:f04853d2d29914dde6910d9587a059d3220dc263180a1f85b6df7960c5aeabd6 sha256:6ad22fbe53ce8bc894a2631b5d7627142b73a8d00e95ecdcf84090cdf6c04f23 sha256:0c6d2a8d3a7e93da40c8c31cadab9ae48b6e402ffb77eacdde2acbb4f0a9c71d sha256:76744ffe8974aa722ff9da769860d6e788d30862fe75e09cbb2e1757dcd5ce44 sha256:a5d5df0135c8d99d7e0bc794641bebaabcc0e190eb47e379954b81129c314cf7 sha256:c0b1986da675a64eb3b97be917e74ad51ce4e44e49b68678b6303a3d916899e3 sha256:61378df3436749e476e25901006b090d17b3f468c3d2376bb600facb33989155 sha256:1b19737cb9d224ab15bb6ea7a2f1d28903c36e31d4dbc6d8fc0ce8b326825723 sha256:7a855edfce5887a698a648f396b67f43ce254300716bf2b14f3de8e7dc00b1c6]
+2020-12-05T13:42:14.9755421Z ##[section]Finishing: Build and push an image to container registry
+2020-12-05T13:42:14.9780188Z ##[section]Starting: Checkout MMT CICD challenge@main to s
+2020-12-05T13:42:14.9786160Z ==============================================================================
+2020-12-05T13:42:14.9786431Z Task         : Get sources
+2020-12-05T13:42:14.9786684Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2020-12-05T13:42:14.9786963Z Version      : 1.0.0
+2020-12-05T13:42:14.9787149Z Author       : Microsoft
+2020-12-05T13:42:14.9787404Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2020-12-05T13:42:14.9787714Z ==============================================================================
+2020-12-05T13:42:15.3354943Z Cleaning any cached credential from repository: MMT CICD challenge (Git)
+2020-12-05T13:42:15.3397690Z ##[section]Finishing: Checkout MMT CICD challenge@main to s
+2020-12-05T13:42:15.3460609Z ##[section]Starting: Finalize Job
+2020-12-05T13:42:15.3498972Z Cleaning up task key
+2020-12-05T13:42:15.3500289Z Start cleaning up orphan processes.
+2020-12-05T13:42:15.3853340Z ##[section]Finishing: Finalize Job
+2020-12-05T13:42:15.3903649Z ##[section]Finishing: Build
