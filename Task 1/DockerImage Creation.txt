@@ -1,0 +1,50 @@
+Macbook:cars-unlimited waqarsaleembutt$ docker build -t mmtreactapp .
+[+] Building 230.8s (10/10) FINISHED                                                                                                                        
+ => [internal] load build definition from Dockerfile                                                                                                   0.0s
+ => => transferring dockerfile: 486B                                                                                                                   0.0s
+ => [internal] load .dockerignore                                                                                                                      0.0s
+ => => transferring context: 2B                                                                                                                        0.0s
+ => [internal] load metadata for docker.io/library/node:14.15.1                                                                                        1.5s
+ => [1/5] FROM docker.io/library/node:14.15.1@sha256:922f9cbc7d960750d3db015e7520f41957130caf8bd16138b29f518aa4ba43a7                                 71.4s
+ => => resolve docker.io/library/node:14.15.1@sha256:922f9cbc7d960750d3db015e7520f41957130caf8bd16138b29f518aa4ba43a7                                  0.0s
+ => => sha256:d938c1761e3afbae9242848ffbb95b9cc1cb0a24d889f8bd955204d347a7266e 2.21kB / 2.21kB                                                         0.0s
+ => => sha256:7919f5b7d60254cafc73c0d097b8ccffb72e0b6472957ece4dd5b378c5ca7cc1 45.38MB / 45.38MB                                                      15.6s
+ => => sha256:0e107167dcc5392ce7b34cb6af6bcfe1cf99f76f9e632d6c321526666558ab50 10.75MB / 10.75MB                                                       4.0s
+ => => sha256:922f9cbc7d960750d3db015e7520f41957130caf8bd16138b29f518aa4ba43a7 776B / 776B                                                             0.0s
+ => => sha256:4c7835fa737e1f06d2e86f9c7fcbe7e42635de6d770d13a1d67d89cad1bb3d7f 7.81kB / 7.81kB                                                         0.0s
+ => => sha256:66a456bba435b99e4c17dd5da957e63bef2c43ae5291b055ce82bd26d9153259 4.34MB / 4.34MB                                                         1.8s
+ => => sha256:5435318a0426be8944e8142c90c8501d9f27e23cbd27e1094311e292dcfbc926 50.11MB / 50.11MB                                                      19.5s
+ => => sha256:8494dd3284650baec0f038af6bec4db4ddbcf520c80f88d690d5e0327e3f4d80 214.32MB / 214.32MB                                                    43.6s
+ => => sha256:3b01939c65060e98dcf4b23f8fd6b94ec5638cc32c35301aeed7f422c7d543da 4.16kB / 4.16kB                                                        15.8s
+ => => sha256:1ce5dd1bc7745ba11871bbde92d0f031346cda6f4c82bccad9f83057d0205320 34.82MB / 34.82MB                                                      25.6s
+ => => extracting sha256:7919f5b7d60254cafc73c0d097b8ccffb72e0b6472957ece4dd5b378c5ca7cc1                                                             11.1s
+ => => sha256:1184d3e0bcb00a452210d9b8934bd9e30eabcd7946bb0afa4b1e8c35dd5da202 2.37MB / 2.37MB                                                        20.7s
+ => => sha256:1e0791c658e98094b69805540c3c1191fccd5e0e7a455ca2c04dec2ae9251b53 294B / 294B                                                            20.9s
+ => => extracting sha256:0e107167dcc5392ce7b34cb6af6bcfe1cf99f76f9e632d6c321526666558ab50                                                              3.0s
+ => => extracting sha256:66a456bba435b99e4c17dd5da957e63bef2c43ae5291b055ce82bd26d9153259                                                              0.7s
+ => => extracting sha256:5435318a0426be8944e8142c90c8501d9f27e23cbd27e1094311e292dcfbc926                                                             13.6s
+ => => extracting sha256:8494dd3284650baec0f038af6bec4db4ddbcf520c80f88d690d5e0327e3f4d80                                                             19.8s
+ => => extracting sha256:3b01939c65060e98dcf4b23f8fd6b94ec5638cc32c35301aeed7f422c7d543da                                                              0.0s
+ => => extracting sha256:1ce5dd1bc7745ba11871bbde92d0f031346cda6f4c82bccad9f83057d0205320                                                              4.0s
+ => => extracting sha256:1184d3e0bcb00a452210d9b8934bd9e30eabcd7946bb0afa4b1e8c35dd5da202                                                              0.3s
+ => => extracting sha256:1e0791c658e98094b69805540c3c1191fccd5e0e7a455ca2c04dec2ae9251b53                                                              0.0s
+ => [internal] load build context                                                                                                                      0.1s
+ => => transferring context: 1.20MB                                                                                                                    0.1s
+ => [2/5] RUN mkdir /usr/src/app                                                                                                                       0.8s
+ => [3/5] COPY . /usr/src/app                                                                                                                          0.0s
+ => [4/5] WORKDIR /usr/src/app                                                                                                                         0.0s
+ => [5/5] RUN yarn                                                                                                                                   128.0s
+ => exporting to image                                                                                                                                29.0s
+ => => exporting layers                                                                                                                               28.9s
+ => => writing image sha256:363cf1879f47691d651274e8f41fba0718a77497b510791eae651293d967a4f8                                                           0.0s
+ => => naming to docker.io/library/mmtreactapp                                                                                                         0.0s
+Macbook:cars-unlimited waqarsaleembutt$ docker run -it -p 3000:3000 mmtreactapp
+Compiled successfully!
+
+You can now view cars-unlimited in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.17.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
